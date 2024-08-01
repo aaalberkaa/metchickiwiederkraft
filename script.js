@@ -146,3 +146,32 @@ const elements = [
         }
     }
 });
+// Массив файлов, которые нужно загрузить
+ const files = ["v1","v2","img","script.js","style.js"
+  
+];
+
+function updateProgressBar(loaded, total) {
+  const progress = Math.round((loaded / total) *  100);
+  document.querySelector('.progress-bar-fill').style.width = progress + '%';
+  if (progress === 100) {
+    // Скрываем полоску загрузки с задержкой
+    setTimeout(() => {
+      document.querySelector('.progress-bar').style.opacity = '0';
+      document.body.style.overflowY = 'auto'; 
+    }, 500); // Задержка в 500 миллисекунд (0.5 секунды)
+  }
+}
+
+function loadFiles() {
+  let loaded = 0;
+  const total = files.length;
+  files.forEach(file => {
+    setTimeout(() => {
+      loaded++;
+      updateProgressBar(loaded, total);
+    }, 1000);
+  });
+}
+
+loadFiles();
