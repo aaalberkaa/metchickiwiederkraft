@@ -72,7 +72,6 @@ position: absolute;
 top: 85%;
 left: 40%;
 font-size: 24px;
-
 }
 .logo { 
   width: 20%; 
@@ -338,6 +337,13 @@ body, html {
     width: 300px;
     left: 10%;
   }
+  .elementScr {
+    font-size: 18px;
+    top: 85%;
+    word-wrap: break-word;
+    width: 300px;
+    left: 10%;
+  }
 
   .element3 {
     height: auto;
@@ -357,7 +363,7 @@ body, html {
     height: auto;
     position: relative;
     left: 0;
-    top: auto;
+    top: 10%;
   }
 
   .hh1, .hh2 {
@@ -382,10 +388,12 @@ body, html {
     position: absolute;
     top: 20%;
     left: 10%;
+    top: 20%;
   }
   .img1{
     top: 75%;
     left: 7%;
+    display: none;
   }
   .fx2{
     position: absolute;
@@ -542,4 +550,17 @@ body, html {
     margin-bottom: 20px;
     display: none;
   }
+  .link{
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    font-size: 18px;
+    text-decoration: none;
+    }
+    .linkp{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    font-size: 24px;
+    }
 }
